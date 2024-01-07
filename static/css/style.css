@@ -1,0 +1,106 @@
+body {
+    height: 100%;
+    color: #fff;
+    font-size: 14px;
+    line-height: 1.5;
+    font-family: Helvetica, "Helvetica Neue", "Open Sans", Arial, "Microsoft YaHei", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: none;
+    background-color: #016F94;
+    text-align: center;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center
+}
+
+@media screen and (max-width: 750px) {
+    body {
+        height: auto;
+        min-height: 100%
+    }
+}
+
+.kill-ie {
+    margin: 0;
+    padding: .5em 0;
+    color: #333;
+    text-align: center;
+    background: #fff8e2
+}
+
+/* 头部 */
+.header {
+    position: fixed;
+    z-index: 10;
+    width: 100%
+}
+
+.header .wx-box {
+    position: absolute;
+    top: 22px;
+    left: 35px;
+    font-size: 18px;
+    display: flex;
+    align-items: center
+}
+
+.header .wx-box .wx {
+    width: 17px;
+    height: 17px;
+    margin-right: 7px
+}
+
+/* 脚部 */
+.footer {
+    position: fixed;
+    bottom: 5px;
+    right: 10px;
+    font-size: 12px;
+    opacity: 0.6
+}
+
+.footer a {
+    color: #fff;
+    text-decoration: none
+}
+
+/* 内容 */
+.container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    width: 1024px;
+    height: 100%
+}
+
+@media screen and (max-width: 1024px) {
+    .container {
+        position: absolute;
+        width: 100%;
+        height: auto;
+        min-height: 100%
+    }
+}
+
+.content {
+    position: relative;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px
+}
+
+@media screen and (max-height: 450px) {
+    .title {
+        margin-bottom: 0
+    }
+}
